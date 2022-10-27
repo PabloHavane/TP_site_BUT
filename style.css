@@ -1,0 +1,24 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.header {
+    height: 85px;
+    background: rgb(81, 75, 246);
+    width: 100%;
+    border-bottom: solid black 1px;
+  }
