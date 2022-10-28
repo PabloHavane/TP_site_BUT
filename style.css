@@ -19,8 +19,20 @@ body {
     height: 85px;
     background: rgb(81, 75, 246);
     width: 100%;
-    border-bottom: solid black 1px;
+    border: solid black 2px;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .head-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .head-bot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
