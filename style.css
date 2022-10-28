@@ -1,7 +1,6 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -21,4 +20,7 @@ body {
     background: rgb(81, 75, 246);
     width: 100%;
     border-bottom: solid black 1px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
   }
