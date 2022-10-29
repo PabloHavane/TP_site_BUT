@@ -16,23 +16,44 @@ body {
 }
 
 .header {
-    height: 85px;
     background: rgb(81, 75, 246);
-    width: 100%;
-    border: solid black 2px;
+    width: 100%; /* toute la largeur */    
+    border: solid black 3px;  
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* pour avoir les deux parties l'une en dessous de l'autre */ 
     align-items: center;
   }
 
   .head-top{
+    border: solid black 3px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin: 9px;
+    background: rgb(44, 147, 12);
+  }
+  
+  .img1{
+    height: 75px;
+    margin: 5px;
+    justify-content: start;
+  }
+  .img2{
+    height: 75px;
+    margin: 5px;
+  }
+  .img3{
+    height: 75px;
+    margin: 5px;
+    margin-left: auto;
   }
 
   .head-bot{
+    margin: 9px; margin-top: 0px;
+    border: solid black 3px;
     width: 100%;
     display: flex;
     justify-content: center;
+    background: rgb(147, 12, 97);
   }
+
