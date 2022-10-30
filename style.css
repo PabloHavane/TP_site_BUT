@@ -51,7 +51,7 @@ body {
   }
 
   .head-bot{
-    /* 2e partie du header */
+    /* 2e partie du header, une barre de navigation */
     margin: 9px; margin-top: 0px;
     border: solid black 3px;
     width: 100%;
@@ -62,6 +62,7 @@ body {
   }
 
   .list{
+    /* liste de barre de nav */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -70,8 +71,10 @@ body {
   }
   
   .items{
+    /* items de la barre de nav */
     cursor: pointer;
     border: solid black 2px;
+    /* qui occupent la largeur de la barre de nav : */
     width: 100%;
     margin: 6px;
     text-align: center;
@@ -79,10 +82,12 @@ body {
   }
 
   .items span{
+    /* juste réduire la taille du triangle */
     font-size: 16px;
   }
 
 .sous-list{
+  /* placer le menu déroulant */
     position:relative;
     display: none;
     top: +5px;
@@ -90,6 +95,7 @@ body {
 }
 
 .items-2{
+  /* propriétés des items déroulés */
   list-style-type: none;
   text-align: center;
   padding: 0 10px;
@@ -97,11 +103,12 @@ body {
   border: 1px solid black;
   background: rgb(163, 158, 158);
 }
-/* .items:nth-child(3) */
-
 .items-2:hover{
-  background: lightblue;
+  background: rgb(230, 186, 173);
 }
+
 .items:hover > ul {
+  /*faire apparaître le menu en passant le curseur dessus */
   display: inline-block;
 }
+
