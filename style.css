@@ -25,11 +25,13 @@ body {
   }
 
   .liens-head{
+    /* pour enlever l'apparence des hyperliens */
     color: black;
     text-decoration: none;
   }
 
   .head-top{
+    /* première partie du header avec les logos */
     border: solid black 3px;
     width: 100%;
     display: flex;
@@ -38,23 +40,18 @@ body {
     background: rgb(181, 184, 180);
   }
   
-  .img1{
-    height: 75px;
-    margin: 5px;
-  }
-  .img2{
-    height: 75px;
-    margin: 5px;
-  }
-  .img3{
+  .img-head{
+    /* fixer la taille des images du header-top */
     height: 75px;
     margin: 5px;
   }
   a:nth-child(3){
+    /* pour que la 3e soit à droite du header-top */
     margin-left: auto;
   }
-  
+
   .head-bot{
+    /* 2e partie du header */
     margin: 9px; margin-top: 0px;
     border: solid black 3px;
     width: 100%;
