@@ -38,12 +38,12 @@ body {
     display: flex;
     align-items: center;
     margin: 9px;
-    background: rgb(181, 184, 180);
+    background: rgb(163, 158, 158);
   }
   
   .img-head{
     /* fixer la taille des images du header-top */
-    height: 75px;
+    height: 65px;
     margin: 5px;
   }
   a:nth-child(3){
@@ -59,7 +59,7 @@ body {
     height: 45px;
     display: flex;
     justify-content: center;
-    background: white;
+    background: rgb(163, 158, 158);
   }
 
   .list{
@@ -79,7 +79,7 @@ body {
     width: 100%;
     margin: 6px;
     text-align: center;
-    background: rgb(163, 158, 158);
+    background: white;
   }
 
   .items span{
@@ -91,7 +91,7 @@ body {
   /* placer le menu déroulant */
     position:relative;
     display: none;
-    top: +5px;
+    top: 0px;
     width: 100%;
 }
 
@@ -100,10 +100,10 @@ body {
   list-style-type: none;
   text-align: center;
   padding: 0 10px;
-  background: blue;
   border: 1px solid black;
-  background: rgb(163, 158, 158);
+  background: rgb(216, 43, 63);
 }
+
 .items-2:hover{
   background: rgb(230, 186, 173);
 }
@@ -127,23 +127,39 @@ label, #toggle{
     font-size: 30px;
     cursor: pointer;
   }
-
+ 
   #toggle:checked+.list{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:170px;
+    height:220px;
     position: absolute;
-    top: 170px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    top: 160px;
     background: rgb(166, 153, 153);
   }
+
   .items {
-    width: 50%;
-    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    flex-wrap: nowrap;
+    position: relative;
   }
 
+  .sous-list{
+    /* placer le menu déroulant */
+      position:relative;
+      display: none;
+      width: 100%;
+  }
 
-
+  .items:hover > ul {
+    /*faire apparaître le menu en passant le curseur dessus */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:100%;
+    width:100%;
+  }
 }
