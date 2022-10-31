@@ -16,6 +16,14 @@ body {
   background-color: lightgray;
 }
 
+main {
+  /* à modifier : */
+  height: 500px;
+  display: flex;
+  margin: 0 5%;
+  background: blue;
+}
+
 .header {
     background: red;
     width: 100%; /* toute la largeur */    
@@ -116,6 +124,45 @@ body {
 label, #toggle{
   display: none;
 }
+
+footer{
+  font-size: 15px;
+  background: rgb(100, 95, 95);
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+}
+
+.foot-left {
+  display: flex;
+  align-self: flex-end;
+  border: 2px black solid;
+  padding: 30px 20px;
+  margin: 10px;
+  background: rgb(192, 176, 176);
+}
+
+.foot-link{
+  display: flex;
+  align-self: flex-end;
+  padding: 10px 20px;
+
+}
+
+.foot-rigth{
+  display: flex;
+  align-self: flex-end;
+  border: 2px black solid;
+  padding: 30px 20px;
+  margin: 10px;
+  background: rgb(192, 176, 176);
+}
+
+
+
 
 @media all and (max-width: 900px){
   .list{
