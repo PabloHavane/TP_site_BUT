@@ -39,6 +39,9 @@ main {
     text-decoration: none;
   }
 
+  .liens-head:hover{
+    text-decoration: underline;
+  }
   .head-top{
     /* première partie du header avec les logos */
     border: solid black 3px;
@@ -122,60 +125,91 @@ main {
 }
 
 label, #toggle{
+  /* menu déroulant cliquable */
   display: none;
 }
 
 footer{
+  /* on définit la base du footer */
   font-size: 15px;
-  background: rgb(100, 95, 95);
+  background: rgb(157, 148, 148);
   color: black;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  margin-top: auto;
 }
 
 .foot-left {
+  /* notre boîte pour le plan du site */
   display: flex;
-  align-self: flex-end;
+  align-self: center;
+  flex-direction: column;
   border: 2px black solid;
-  padding: 30px 20px;
+  padding: 15px;
   margin: 10px;
-  background: rgb(192, 176, 176);
+  background: rgb(174, 68, 68);
+}
+
+.p-foot{
+  /* pour faire joli et centré */
+  text-decoration: underline;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.ul-foot{
+  /* bien les disposer */
+  display: flex;
+  flex-direction: column;
+}
+
+.il-foot{
+  /* bien les disposer */
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
 }
 
 .foot-link{
+  /* bien disposer le footer, là c'est le lien RGPD*/
   display: flex;
   align-self: flex-end;
   padding: 10px 20px;
-
 }
 
 .foot-rigth{
+  /* notre boîte d'entreprise */
   display: flex;
-  align-self: flex-end;
+  flex-direction: column;
   border: 2px black solid;
-  padding: 30px 20px;
+  padding: 15px;
   margin: 10px;
-  background: rgb(192, 176, 176);
+  padding-bottom: available;
+  background: rgb(174, 68, 68);
 }
+
+
 
 
 
 
 @media all and (max-width: 900px){
   .list{
+    /* magie, on enlève la barre nav */
     display: none;
   }
 
   label{
+    /* on fait apparaître notre hamburger */
     display: flex;
     font-size: 30px;
     cursor: pointer;
   }
  
   #toggle:checked+.list{
+    /* quand le hamburger est coché, on met la liste, mais en colonne */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -186,27 +220,49 @@ footer{
   }
 
   .items {
+    /* bien disposer les items de la barre du menu*/
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    flex-wrap: nowrap;
     position: relative;
+    width: 220px;
   }
 
   .sous-list{
-    /* placer le menu déroulant */
+    /* placer le menu déroulant au bon endroit */
       position:relative;
       display: none;
       width: 100%;
   }
 
   .items:hover > ul {
-    /*faire apparaître le menu en passant le curseur dessus */
+    /*disposer bien le sous-menu */
     display: flex;
     flex-direction: column;
     position: absolute;
     left:100%;
-    width:100%;
+    width:80%;
+  }
+  
+  footer{
+    /* on change le format du footer */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 20px;
+  }
+  
+  /* on change le format des boîtes du footer */
+  .foot-left{
+    width: 100%;
+  }
+  .foot-rigth{
+    width: 100%;
+  }
+
+  .ul-foot{
+    display: flex;
+    margin: auto;
   }
 }
