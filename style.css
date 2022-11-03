@@ -188,23 +188,121 @@ footer{
 }
 
 /* *********** COMPETENCE *********** */
-/* A MODIFIER OU SUPPRIMER RAPIDEMENT */
+
 hr{
   margin: 20px;
   color: black;
 }
 
-table,
-th,
-td {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 5px;
+.comp-main{
+  border: 3px solid #000;
+  margin: 0;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-thead,
-tfoot {
-    color: rgb(255, 0, 0);
+.comp-main section{
+  border: 3px solid #000;
 }
+
+.comp-main h1{
+  padding: 10px;
+}
+
+.comp-main h2{
+  padding: 10px;
+}
+
+.apprenti-cri div{
+  display: flex;
+  align-items: center;
+}
+
+.apprenti-cri img{
+  padding: 10px;
+}
+
+.apprenti-cri li{
+  list-style-type: none;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.table-coeff{
+  padding: 3px;
+  margin: 5px;
+  border: 2px solid #000;
+}
+
+.table-coeff th, .table-coeff td{
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #000;
+}
+
+.t-coeff{
+  color: red;
+}
+
+.table-sae{
+  padding: 3px;
+  margin: 5px;
+  border: 2px solid #000;
+}
+
+.table-sae th, .table-sae td{
+  padding: 5px;
+  border: solid 1px #000;
+}
+
+.r-competence{
+  padding: 5px 10px;
+}
+
+.r-last-competence{
+  padding: 5px 10px 10px 10px;
+}
+
+.r-competence h4{
+  padding: 3px 0;
+}
+
+.r-titre{
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  padding: 10px 0;
+}
+
+.r-union{
+  margin: 0 0.5em;
+}
+
+.r-ac{
+  margin: 5px 0;
+}
+
+.r-ac li{
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.r-descriptif p{
+  margin-left: 20px;
+}
+
+.comp-main a{
+  margin: 17px 17px 10px 17px;
+  text-decoration: none;
+  color: #000;
+}
+
+.comp-main a:hover{
+  color: red;
+}
+
 /**************************************/
 
 @media all and (max-width: 900px){
