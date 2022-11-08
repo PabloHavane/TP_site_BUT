@@ -218,11 +218,12 @@ main {
 .pres-b2{
   margin: 1%;
   display: flex;
-  justify-content: stretch;
+  flex-wrap: wrap;
+  
+  align-content: stretch;
   width: 100%;
   border: 2px solid black;
   background: lightgreen;
-  flex-wrap: wrap;
 }
 
 .pres-p{
@@ -235,10 +236,9 @@ main {
 
 .pres-p2{
   display: flex;
-  justify-content: stretch;
+  flex-basis: 40%;
+  flex-grow: 50;
   border: 2px solid black;
-  height: auto;
-  width: auto;
   margin: 1%;
   background: rgb(144, 144, 144);
 }
@@ -248,9 +248,12 @@ table{
     background: white;
     margin: 1%;
     width: 50%;
-    font-size: 8px;
+    font-size: 12px;
 }
 
+.td-pres{
+  writing-mode: sideways-lr;
+}
 tr,
 td{
   text-align: center;
