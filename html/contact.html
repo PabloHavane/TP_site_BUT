@@ -40,28 +40,28 @@
     <main>
         <h1>Contact</h1>
         <article>
-            <section>
+            <section class="form">
                 <h2>Formulaire de contact</h2>
-                <div class="form">
-                    <div>
-                        <label for="name">Nom :</label>
-                        <input type="text" placeholder="Nom" id="name" name="name">
+                <div class="fc-form">
+                    <div class="fc-form-left">
+                        <label for="name" class="fc-label">Nom :</label>
+                        <input type="text" placeholder="Doe" id="name" name="name">
 
-                        <label for="firstname">Prénom :</label>
-                        <input type="text" placeholder="Prénom" id="firstname">
+                        <label for="firstname" class="fc-label">Prénom :</label>
+                        <input type="text" placeholder="John" id="firstname">
 
-                        <label for="email">Adresse email :</label>
-                        <input type="email" name="email" id="email" placeholder="adresse@mail.com">
+                        <label for="email" class="fc-label">Adresse email :</label>
+                        <input type="email" name="email" id="email" placeholder="votre.adresse@mail.com">
 
-                        <button type="submit">Envoyer</button>
+                        <button type="submit" class="fc-button">Envoyer</button>
                     </div>
-                    <div>
-                        <label for="message">Un petit mot :</label>
-                        <input type="text" name="message" id="message">
+                    <div class="fc-form-right">
+                        <label for="message" class="fc-label">Un petit mot :</label>
+                        <input type="text" name="message" id="message" placeholder="Ecrivez ici">
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="info">
                 <img src="/img/campus-iut.jpg" alt="Photo de l'IUT Paul Sabatier à Toulouse" class="ct-img">
                 <div>
                     <address>

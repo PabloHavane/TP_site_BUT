@@ -81,13 +81,17 @@ main {
   
   .items{
     /* items de la barre de nav */
-    cursor: pointer;
+    
     border: solid black 2px;
     /* qui occupent la largeur de la barre de nav : */
     width: 100%;
     margin: 6px;
     text-align: center;
     background: white;
+  }
+
+  .items a{
+    cursor: pointer;
   }
 
   .items span{
@@ -307,8 +311,47 @@ hr{
 
 /* ************ CONTACT ************* */
 
-label{
+.form{
+  border: 3px solid #000;
+  padding: 10px;
+}
+
+.fc-form{
+  display: flex;
+  justify-content: space-around;
+}
+
+.fc-form button{
   display: block;
+}
+
+.fc-form-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100%;
+  padding: 10px 10px 0 0;
+}
+
+.fc-label{
+  display: block;
+  padding: 5px 0;
+}
+
+.fc-button{
+  margin: 10px 0 0 0;
+}
+
+.fc-form-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100%;
+  padding: 10px 10px 0 0;
+}
+
+.fc-form-right input{
+  height: 100%;
 }
 
 .ct-img{
