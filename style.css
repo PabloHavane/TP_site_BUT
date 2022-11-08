@@ -162,12 +162,14 @@ footer{
   /* bien les disposer */
   display: flex;
   flex-direction: column;
+  list-style: none;
 }
 
 .il-foot{
   /* bien les disposer */
   display: flex;
   margin-left: 20px;
+  list-style: none;
   flex-direction: column;
 }
 
