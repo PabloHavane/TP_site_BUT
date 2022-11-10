@@ -248,15 +248,17 @@ main {
   padding: 5px;
 }
 
-tr:nth-child(1){
-  border: ;
- }
-
- tr:nth-child(2){
+ tr:nth-child(3){
   font-weight: bold;
  }
 
+.boldo{
+  font-weight: bold;
+}
 
+.tr-sp{
+  padding-top: 5px;
+}
 
 
 
