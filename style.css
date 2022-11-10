@@ -358,6 +358,15 @@ hr{
   width: 40%;
 }
 
+.info{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info iframe{
+  height: 70%;
+}
+
 /**************************************/
 
 @media all and (max-width: 900px){
