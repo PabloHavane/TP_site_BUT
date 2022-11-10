@@ -229,16 +229,15 @@ main {
 
 .pres-p2{
   display: flex;
-  flex-basis: 20%;
-  flex-grow: 50;
+  flex-grow: 1;
   border: 2px solid black;
   margin: 1%;
+  padding: 5px;
   background: rgb(144, 144, 144);
 }
 
 .pres-table{
     background: white;
-    width: 70%;
     font-size: 12px;
     margin: 1%;
 }
@@ -261,11 +260,11 @@ tr:nth-child(1){
 
 
 
-@media all and (max-width: 1300px){
+/* @media all and (max-width: 1300px){
   .pres-table{
     width: 100%;
   }
-}
+} */
 
 
 
