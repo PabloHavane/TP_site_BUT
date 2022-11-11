@@ -252,12 +252,19 @@ main {
   font-weight: bold;
  }
 
+ td{
+  margin-right: 5px;
+ }
+
 .boldo{
   font-weight: bold;
 }
 
 .tr-sp{
-  padding-top: 5px;
+  padding-top: 10px;
+}
+.center-td{
+  text-align: center;
 }
 
 
