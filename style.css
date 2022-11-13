@@ -190,13 +190,13 @@ footer{
 /* ************************************************* */
 /*                page présentation                  */
 /* ************************************************* */
-main {
-  /* à modifier : */
+.pres-main {
   display: flex;
   background: rgb(56, 56, 109);
   flex-wrap: wrap;
   border: 2px solid black;
   margin: 1%;
+  justify-content: center;
 }
 
 .pres-b1{
@@ -222,9 +222,9 @@ main {
 .pres-p{
   width: 100%;
   border: 2px solid black;
-  height: 20px;
   margin: 1%;
   background: rgb(144, 144, 144);
+  padding: 5px;
 }
 
 .pres-p2{
@@ -244,8 +244,8 @@ main {
 
 .td-pres{
   writing-mode: sideways-lr;
-  text-align: center;
   padding: 5px;
+  text-align: start;
 }
 
  tr:nth-child(3){
@@ -267,6 +267,10 @@ main {
   text-align: center;
 }
 
+.hr{
+  color: aqua;
+  width: 80%;
+}
 
 
 /* @media all and (max-width: 1300px){
