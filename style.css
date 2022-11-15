@@ -13,7 +13,7 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  background-color: lightgray;
+  background-color: rgb(230, 230, 230);
 }
 
 main {
@@ -23,8 +23,7 @@ main {
 
 .header {
     background: red;
-    width: 100%; /* toute la largeur */    
-    border: solid black 3px;  
+    width: 100%; /* toute la largeur */
     display: flex;
     flex-wrap: wrap; /* pour avoir les deux parties l'une en dessous de l'autre */ 
     align-items: center;
@@ -37,11 +36,11 @@ main {
   }
 
   .liens-head:hover{
-    text-decoration: underline;
+    color: gray;
   }
   .head-top{
     /* première partie du header avec les logos */
-    border: solid black 3px;
+    border-radius: 10px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -61,8 +60,9 @@ main {
 
   .head-bot{
     /* 2e partie du header, une barre de navigation */
-    margin: 9px; margin-top: 0px;
-    border: solid black 3px;
+    margin: 9px; 
+    margin-top: 0px;
+    border-radius: 10px;
     width: 100%;
     height: 45px;
     display: flex;
@@ -81,11 +81,10 @@ main {
   
   .items{
     /* items de la barre de nav */
-    
-    border: solid black 2px;
+    border-radius: 10px;
     /* qui occupent la largeur de la barre de nav : */
     width: 100%;
-    margin: 6px;
+    margin: 8px;
     text-align: center;
     background: white;
   }
@@ -113,11 +112,16 @@ main {
   text-align: center;
   padding: 0 10px;
   border: 1px solid black;
-  background: rgb(216, 43, 63);
+  border-radius: 10px;
+  background: rgb(255, 0, 30);
 }
 
 .items-2:hover{
   background: rgb(230, 186, 173);
+}
+
+.items-2:hover .liens-head:hover{
+  color: white;
 }
 
 .items:hover > ul {
@@ -130,10 +134,12 @@ label, #toggle{
   display: none;
 }
 
+/* *** FOOTER *** */
+
 footer{
   /* on définit la base du footer */
   font-size: 15px;
-  background: rgb(157, 148, 148);
+  background-color: rgb(157, 148, 148);
   color: black;
   width: 100%;
   display: flex;
@@ -145,7 +151,7 @@ footer{
   display: flex;
   align-self: center;
   flex-direction: column;
-  border: 2px black solid;
+  border-radius: 10px;
   padding: 15px;
   margin: 10px;
   background: rgb(174, 68, 68);
@@ -164,13 +170,15 @@ footer{
   /* bien les disposer */
   display: flex;
   flex-direction: column;
+  padding: 5px;
+  list-style-type: none;
 }
 
-.il-foot{
+.li-foot{
   /* bien les disposer */
   display: flex;
-  margin-left: 20px;
   flex-direction: column;
+  list-style-type: none;
 }
 
 .foot-link{
@@ -184,7 +192,7 @@ footer{
   /* notre boîte d'entreprise */
   display: flex;
   flex-direction: column;
-  border: 2px black solid;
+  border-radius: 10px;
   padding: 15px;
   margin: 10px;
   padding-bottom: available;
@@ -199,16 +207,17 @@ hr{
 }
 
 .comp-main{
-  border: 3px solid #000;
   margin: 0;
-  padding: 7px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .comp-main section{
-  border: 3px solid #000;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
 }
 
 .comp-main h1{
@@ -238,6 +247,7 @@ hr{
   padding: 3px;
   margin: 5px;
   border: 2px solid #000;
+  border-collapse: collapse;
 }
 
 .table-coeff th, .table-coeff td{
@@ -254,6 +264,7 @@ hr{
   padding: 3px;
   margin: 5px;
   border: 2px solid #000;
+  border-collapse: collapse;
 }
 
 .table-sae th, .table-sae td{
