@@ -322,8 +322,13 @@ hr{
 
 /* ************ CONTACT ************* */
 
+.ct-titre{
+  display: none;
+}
+
 .form{
-  border: 3px solid #000;
+  border-radius: 10px;
+  background-color: white;
   padding: 10px;
 }
 
@@ -334,6 +339,17 @@ hr{
 
 .fc-form button{
   display: block;
+}
+
+.fc-form input[type=text], .fc-form input[type=email]{
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* A DEBUGUER */
+.fc-form input:active{
+  border-color: #d00;
 }
 
 .fc-form-left{
@@ -374,7 +390,8 @@ hr{
   display: flex;
   justify-content: stretch;
   margin-top: 10px;
-  border: 3px solid #000;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .info-adif{
