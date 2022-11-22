@@ -13,104 +13,118 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  background-color: lightgray;
+  background-color: rgb(230, 230, 230);
 }
 
-
+main {
+  /* à modifier : */
+  margin: 10px;
+}
 
 .header {
-    background: red;
-    width: 100%; /* toute la largeur */    
-    border: solid black 3px;  
-    display: flex;
-    flex-wrap: wrap; /* pour avoir les deux parties l'une en dessous de l'autre */ 
-    align-items: center;
-  }
+  background: red;
+  width: 100%; /* toute la largeur */
+  display: flex;
+  flex-wrap: wrap; /* pour avoir les deux parties l'une en dessous de l'autre */ 
+  align-items: center;
+}
 
-  .liens-head{
-    /* pour enlever l'apparence des hyperliens */
-    color: black;
-    text-decoration: none;
-  }
-  
-  .liens-head:hover{
-    text-decoration: underline;
-  }
-  .head-top{
-    /* première partie du header avec les logos */
-    border: solid black 3px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin: 9px;
-    background: rgb(163, 158, 158);
-  }
-  
-  .img-head{
-    /* fixer la taille des images du header-top */
-    height: 65px;
-    margin: 5px;
-  }
-  a:nth-child(3){
-    /* pour que la 3e soit à droite du header-top */
-    margin-left: auto;
-  }
-  
-  .head-bot{
-    /* 2e partie du header, une barre de navigation */
-    margin: 9px; margin-top: 0px;
-    border: solid black 3px;
-    width: 100%;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    background: rgb(163, 158, 158);
-  }
+.liens-head{
+  /* pour enlever l'apparence des hyperliens */
+  color: black;
+  text-decoration: none;
+}
 
-  .list{
-    /* liste de barre de nav */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    font-size: 21px;
-  }
-  
-  .items{
-    /* items de la barre de nav */
-    cursor: pointer;
-    border: solid black 2px;
-    /* qui occupent la largeur de la barre de nav : */
-    width: 100%;
-    margin: 6px;
-    text-align: center;
-    background: white;
-  }
+.liens-head:hover{
+  color: gray;
+}
 
-  .items span{
-    /* juste réduire la taille du triangle */
-    font-size: 16px;
-  }
-  
-  .sous-list{
-    /* placer le menu déroulant */
-    position:relative;
-    display: none;
-    top: 0px;
-    width: 100%;
-  }
-  
-  .items-2{
-    /* propriétés des items déroulés */
-    list-style-type: none;
+.head-top{
+  /* première partie du header avec les logos */
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 9px;
+  background: rgb(163, 158, 158);
+}
+
+.img-head{
+  /* fixer la taille des images du header-top */
+  height: 65px;
+  margin: 5px;
+}
+
+a:nth-child(3){
+  /* pour que la 3e soit à droite du header-top */
+  margin-left: auto;
+}
+
+.head-bot{
+  /* 2e partie du header, une barre de navigation */
+  margin: 9px; 
+  margin-top: 0px;
+  border-radius: 10px;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  background: rgb(163, 158, 158);
+}
+
+.list{
+  /* liste de barre de nav */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 21px;
+}
+
+.items{
+  /* items de la barre de nav */
+  border-radius: 10px;
+  /* qui occupent la largeur de la barre de nav : */
+  width: 100%;
+  margin: 8px;
+  text-align: center;
+  background: white;
+}
+
+.items a{
+  cursor: pointer;
+}
+
+.items span{
+  /* juste réduire la taille du triangle */
+  font-size: 16px;
+}
+
+.sous-list{
+/* placer le menu déroulant */
+  position:relative;
+  display: none;
+  top: 0px;
+  width: 100%;
+}
+
+.items-2{
+  /* propriétés des items déroulés */
+  list-style-type: none;
+
   text-align: center;
   padding: 0 10px;
   border: 1px solid black;
-  background: rgb(216, 43, 63);
+  border-radius: 10px;
+  background: rgb(255, 0, 30);
 }
 
 .items-2:hover{
   background: rgb(230, 186, 173);
+}
+
+.items-2:hover .liens-head:hover{
+  color: white;
 }
 
 .items:hover > ul {
@@ -123,14 +137,42 @@ label, #toggle{
   display: none;
 }
 
+/* *** FOOTER *** */
+
 footer{
   /* on définit la base du footer */
   font-size: 15px;
-  background: rgb(157, 148, 148);
+  background-color: rgb(157, 148, 148);
   color: black;
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+footer .li-foot .liens-head{
+  padding: 20px;
+}
+
+footer .liens-head:visited{
+  color: black;
+}
+
+footer .liens-head:hover{
+  color: white;
+}
+
+footer a{
+  color: blue;
+  text-decoration: none;
+}
+
+footer a:visited{
+  color: #b00;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: white;
 }
 
 .foot-left {
@@ -138,7 +180,7 @@ footer{
   display: flex;
   align-self: center;
   flex-direction: column;
-  border: 2px black solid;
+  border-radius: 10px;
   padding: 15px;
   margin: 10px;
   background: rgb(174, 68, 68);
@@ -146,7 +188,6 @@ footer{
 
 .p-foot{
   /* pour faire joli et centré */
-  text-decoration: underline;
   font-weight: bolder;
   display: flex;
   justify-content: center;
@@ -157,15 +198,15 @@ footer{
   /* bien les disposer */
   display: flex;
   flex-direction: column;
-  list-style: none;
+  padding: 5px;
+  list-style-type: none;
 }
 
-.il-foot{
+.li-foot{
   /* bien les disposer */
   display: flex;
-  margin-left: 20px;
-  list-style: none;
   flex-direction: column;
+  list-style-type: none;
 }
 
 .foot-link{
@@ -179,13 +220,169 @@ footer{
   /* notre boîte d'entreprise */
   display: flex;
   flex-direction: column;
-  border: 2px black solid;
+  border-radius: 10px;
   padding: 15px;
   margin: 10px;
   padding-bottom: available;
   background: rgb(174, 68, 68);
 }
 
+/* *********** COMPETENCE *********** */
+
+hr{
+  margin: 20px;
+  color: black;
+}
+
+.comp-main{
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comp-main section{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.comp-main h1{
+  padding: 10px;
+}
+
+.comp-main h2{
+  padding: 10px;
+}
+
+.apprenti-cri div{
+  display: flex;
+  align-items: center;
+}
+
+.apprenti-cri img{
+  padding: 10px;
+}
+
+.apprenti-cri li{
+  list-style-type: none;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.table-coeff{
+  padding: 3px;
+  margin: 5px;
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+
+.table-coeff th, .table-coeff td{
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #000;
+}
+
+.t-coeff{
+  color: red;
+}
+
+.table-sae{
+  padding: 3px;
+  margin: 5px;
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+
+.table-sae th, .table-sae td{
+  padding: 5px;
+  border: solid 1px #000;
+}
+
+.r-competence{
+  padding: 5px 10px;
+}
+
+.r-last-competence{
+  padding: 5px 10px 10px 10px;
+}
+
+.r-competence h4{
+  padding: 3px 0;
+}
+
+.r-titre{
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  padding: 10px 0;
+}
+
+.r-union{
+  margin: 0 0.5em;
+}
+
+.r-ac{
+  margin: 5px 0;
+}
+
+.r-ac li{
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.r-descriptif p{
+  margin-left: 20px;
+}
+
+.comp-main a{
+  margin: 17px 17px 10px 17px;
+  text-decoration: none;
+  color: #000;
+}
+
+.comp-main a:hover{
+  color: red;
+}
+
+/**************************************/
+
+/* ************ CONTACT ************* */
+
+.ct-titre{
+  display: none;
+}
+
+.form{
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.fc-form{
+  display: flex;
+  justify-content: space-around;
+}
+
+.fc-form input[type=text], .fc-form input[type=email]{
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.fc-form-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100%;
+  padding: 10px 10px 0 0;
+}
+
+.fc-label{
+  display: block;
+  padding: 5px 0;
+}
 
 /* ************************************************* */
 /*                page présentation                  */
@@ -344,18 +541,70 @@ footer{
   padding: 5px;
 }
 
+.fc-button{
+  display: block;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+}
 
+.fc-button:hover{
+  cursor: pointer;
+  background-color: lightgray;
+}
 
+.fc-button:active{
+  background-color: rgb(230, 230, 230);
+}
 
-/* @media all and (max-width: 1300px){
-  .pres-table{
-    width: 100%;
-  }
-} */
+.fc-form-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100%;
+  padding: 10px 10px 0 0;
+}
 
+.fc-form-right input{
+  height: 100%;
+}
 
+.ct-img{
+  width: 50%;
+  padding: 10px;
+}
 
+.info{
+  display: flex;
+  justify-content: stretch;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
 
+.info-adif{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.info-adif address{
+  padding: 10px;
+  font-size: 30px;
+}
+
+.info-adif iframe{
+  width: 100%;
+  height: 400px;
+  padding: 0 10px 10px 0;
+}
+
+/**************************************/
 
 @media all and (max-width: 900px){
   .list{
@@ -368,6 +617,10 @@ footer{
     display: flex;
     font-size: 30px;
     cursor: pointer;
+  }
+
+  .fc-label{
+    font-size: medium;
   }
  
   #toggle:checked+.list{
