@@ -477,8 +477,6 @@ hr{
   width: 80%;
 }
 
-
-
 .pres-boxC1,.pres-boxC2, .pres-boxC3, .pres-boxC4, .pres-boxC5, .pres-boxC6{
   width: 100%;
   margin: 1%;
@@ -512,8 +510,6 @@ hr{
   align-items: center;
   grid-row: 2;
 }
-
-
 
 .bright {
   margin: 1%;
@@ -603,6 +599,12 @@ hr{
   height: 400px;
   padding: 0 10px 10px 0;
 }
+
+/**************************************/
+
+/* ************* INDEX ************** */
+
+
 
 /**************************************/
 
