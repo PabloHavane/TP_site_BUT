@@ -477,16 +477,6 @@ hr{
   width: 80%;
 }
 
-.pres-boxC1,.pres-boxC2, .pres-boxC3, .pres-boxC4, .pres-boxC5, .pres-boxC6{
-  width: 100%;
-  margin: 1%;
-  border: 2px solid black;
-  background: lightgreen;
-  display: grid;
-  grid-template-columns: auto 25% 25% 25%;
-  grid-template-rows: 50% 50%;
-}
-
 .bleft {
   margin: 1%;
   border: 2px solid black;
