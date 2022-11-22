@@ -54,6 +54,7 @@ main {
   height: 65px;
   margin: 5px;
 }
+
 a:nth-child(3){
   /* pour que la 3e soit à droite du header-top */
   margin-left: auto;
@@ -110,6 +111,7 @@ a:nth-child(3){
 .items-2{
   /* propriétés des items déroulés */
   list-style-type: none;
+
   text-align: center;
   padding: 0 10px;
   border: 1px solid black;
@@ -380,6 +382,163 @@ hr{
 .fc-label{
   display: block;
   padding: 5px 0;
+}
+
+/* ************************************************* */
+/*                page présentation                  */
+/* ************************************************* */
+.pres-main {
+  display: flex;
+  background: rgb(56, 56, 109);
+  flex-wrap: wrap;
+  border: 2px solid black;
+  margin: 1%;
+  justify-content: center;
+}
+
+.pres-b1{
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border: 2px solid black;
+  background: rgb(254, 79, 79);
+}
+
+.pres-b2{
+  margin: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  width: 100%;
+  border: 2px solid black;
+  background: rgb(228, 90, 40);
+}
+
+.pres-p{
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  margin: 1%;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  justify-content: center;
+}
+
+.pres-p2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  border: 2px solid black;
+  margin: 1%;
+  padding: 5px;
+  background: rgb(153, 150, 150);
+  width: 20%;
+  justify-content: center;
+}
+
+.pres-table{
+    background: white;
+    font-size: 12px;
+    margin: 1%;
+    width: 50%;
+}
+
+.td-pres{
+  writing-mode: sideways-lr;
+  padding: 5px;
+  text-align: start;
+}
+
+ tr:nth-child(3){
+  font-weight: bold;
+ }
+
+ td{
+  margin-right: 5px;
+ }
+
+.boldo{
+  font-weight: bold;
+}
+
+.tr-sp{
+  padding-top: 10px;
+}
+.center-td{
+  text-align: center;
+}
+
+.hr{
+  height: 2px;
+  color: aqua;
+  width: 80%;
+}
+
+
+
+.pres-boxC1,.pres-boxC2, .pres-boxC3, .pres-boxC4, .pres-boxC5, .pres-boxC6{
+  width: 100%;
+  margin: 1%;
+  border: 2px solid black;
+  background: lightgreen;
+  display: grid;
+  grid-template-columns: auto 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+}
+
+.bleft {
+  margin: 1%;
+  border: 2px solid black;
+  background: rgb(183, 115, 247);
+  grid-row: 1/3;
+  grid-column: 1;
+  flex-shrink: 0;
+  justify-self: center;
+}
+.pres-boxC1 :nth-child(n+2), .pres-boxC3 :nth-child(n+2), .pres-boxC5 :nth-child(n+2){
+  margin: 1%;
+  border: 2px solid black;
+  background: lightblue;
+  align-items: center;
+  grid-row: 1;
+}
+.pres-boxC1 :nth-child(n+5), .pres-boxC3 :nth-child(n+5), .pres-boxC5 :nth-child(n+5){
+  margin: 1%;
+  border: 2px solid black;
+  background: lightblue;
+  align-items: center;
+  grid-row: 2;
+}
+
+
+
+.bright {
+  margin: 1%;
+  border: 2px solid black;
+  background: rgb(183, 115, 247);
+  grid-row: 1/3;
+  grid-column: 4;
+  flex-shrink: 0;
+  height: 60px;
+}
+
+.pres-boxC2 :nth-child(n+2), .pres-boxC4 :nth-child(n+2), .pres-boxC6 :nth-child(n+2){
+  margin: 1%;
+  border: 2px solid black;
+  background: rgb(218, 40, 174);
+  align-items: center;
+  grid-row: 1/3;
+}
+
+.comp1{
+  background: rgba(239, 4, 4, 0.789);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
 }
 
 .fc-button{
