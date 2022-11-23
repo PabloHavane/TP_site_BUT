@@ -388,8 +388,9 @@ hr{
 /*                page présentation                  */
 /* ************************************************* */
 .pres-main {
+  border-radius: 10px;
   display: flex;
-  background: rgb(56, 56, 109);
+  background: rgb(75, 73, 73);
   flex-wrap: wrap;
   border: 2px solid black;
   margin: 1%;
@@ -397,14 +398,14 @@ hr{
 }
 
 .pres-b1{
+  border-radius: 10px;
   margin: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
   width: 100%;
-  border: 2px solid black;
-  background: rgb(254, 79, 79);
+  background: rgb(204, 42, 42);
 }
 
 .pres-b2{
@@ -414,15 +415,15 @@ hr{
   align-content: stretch;
   width: 100%;
   border: 2px solid black;
-  background: rgb(228, 90, 40);
+  background: rgb(35, 32, 31);
 }
 
 .pres-p{
+  border-radius: 10px;
   display: flex;
   width: 100%;
-  border: 2px solid black;
   margin: 1%;
-  background: rgb(255, 255, 255);
+  background: rgb(171, 97, 97);
   padding: 5px;
   justify-content: center;
 }
@@ -431,16 +432,16 @@ hr{
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  border: 2px solid black;
+  border-radius: 10px;
   margin: 1%;
   padding: 5px;
-  background: rgb(153, 150, 150);
+  background: rgb(243, 218, 218);
   width: 20%;
   justify-content: center;
 }
 
 .pres-table{
-    background: white;
+    background: rgb(244, 231, 231);
     font-size: 12px;
     margin: 1%;
     width: 50%;
@@ -473,65 +474,67 @@ hr{
 
 .hr{
   height: 2px;
-  color: aqua;
-  width: 80%;
+  color: rgb(255, 255, 255);
+  width: 90%;
 }
 
 
 
-.pres-boxC1,.pres-boxC2, .pres-boxC3, .pres-boxC4, .pres-boxC5, .pres-boxC6{
+.pres-boxC1, .pres-boxC3, .pres-boxC5, .pres-boxC2, .pres-boxC4, .pres-boxC6{
   width: 100%;
   margin: 1%;
-  border: 2px solid black;
-  background: lightgreen;
+  border-radius: 10px;
+  background: rgb(229, 224, 224);
   display: grid;
   grid-template-columns: auto 25% 25% 25%;
   grid-template-rows: 50% 50%;
 }
 
+.pres-boxC2, .pres-boxC4, .pres-boxC6{
+  grid-template-columns: 25% 25% 25% auto;
+  grid-template-rows: 50% 50%;
+}
+ 
+.logoC{
+  display: flex;
+  width: 170px;
+  align-items: stretch;
+  border-radius: 10px;
+}
+
 .bleft {
-  margin: 1%;
-  border: 2px solid black;
+  border-radius: 10px;
+  margin: 2%;
   background: rgb(183, 115, 247);
   grid-row: 1/3;
   grid-column: 1;
-  flex-shrink: 0;
   justify-self: center;
 }
-.pres-boxC1 :nth-child(n+2), .pres-boxC3 :nth-child(n+2), .pres-boxC5 :nth-child(n+2){
-  margin: 1%;
-  border: 2px solid black;
-  background: lightblue;
-  align-items: center;
-  grid-row: 1;
+
+.bright {
+  border-radius: 10px;
+  margin: 2%;
+  background: rgb(183, 115, 247);
+  grid-row: 1/3;
+  grid-column: 4;
+  justify-self: center;
 }
-.pres-boxC1 :nth-child(n+5), .pres-boxC3 :nth-child(n+5), .pres-boxC5 :nth-child(n+5){
+
+.pres-boxC1 :nth-child(n+2), .pres-boxC3 :nth-child(n+2), .pres-boxC5 :nth-child(n+2), .pres-boxC2 :nth-child(n+2), .pres-boxC4 :nth-child(n+2), .pres-boxC6 :nth-child(n+2){
   margin: 1%;
-  border: 2px solid black;
-  background: lightblue;
-  align-items: center;
+  border-radius: 10px;
+  background: rgba(105, 101, 101, 0.608);
+  grid-row: 1;
+  padding: 4px;
+  height: 70px;
+}
+.pres-boxC1 :nth-child(n+5), .pres-boxC3 :nth-child(n+5), .pres-boxC5 :nth-child(n+5), .pres-boxC2 :nth-child(n+5), .pres-boxC4 :nth-child(n+5), .pres-boxC6 :nth-child(n+5){
   grid-row: 2;
 }
 
 
-
-.bright {
-  margin: 1%;
-  border: 2px solid black;
-  background: rgb(183, 115, 247);
-  grid-row: 1/3;
-  grid-column: 4;
-  flex-shrink: 0;
-  height: 60px;
-}
-
-.pres-boxC2 :nth-child(n+2), .pres-boxC4 :nth-child(n+2), .pres-boxC6 :nth-child(n+2){
-  margin: 1%;
-  border: 2px solid black;
-  background: rgb(218, 40, 174);
-  align-items: center;
-  grid-row: 1/3;
-}
+/********************    pages   *****************************/
+/******************** compétence *****************************/
 
 .comp1{
   background: rgba(239, 4, 4, 0.789);
