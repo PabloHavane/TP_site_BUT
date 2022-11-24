@@ -120,7 +120,7 @@ a:nth-child(3){
 }
 
 .items-2:hover{
-  background: rgb(230, 186, 173);
+  background: rgb(138, 35, 35);
 }
 
 .items-2:hover .liens-head:hover{
@@ -478,11 +478,10 @@ hr{
   width: 90%;
 }
 
-
-
 .pres-boxC1, .pres-boxC3, .pres-boxC5, .pres-boxC2, .pres-boxC4, .pres-boxC6{
-  width: 100%;
+  width: 99%;
   margin: 1%;
+  padding: 0.7%;
   border-radius: 10px;
   background: rgb(229, 224, 224);
   display: grid;
@@ -605,6 +604,109 @@ hr{
   width: 100%;
   height: 400px;
   padding: 0 10px 10px 0;
+}
+
+/**************************************/
+
+/* ******** ACCUEIL / INDEX ********* */
+
+.acc-main{
+  margin: 0;
+}
+
+.acc-main article{
+  padding: 5px;
+}
+
+.acc-titre{
+  padding: 10px;
+}
+
+.historique{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: White;
+  border-radius: 10px;
+}
+
+.historique img{
+  height: 15em;
+  padding-right: 20px;
+}
+
+.historique p{
+  padding: 0 10px;
+}
+
+.iut{
+  padding: 10px;
+  margin: 10px;
+  background-color: White;
+  border-radius: 10px;
+}
+
+.iut h2{
+  margin-bottom: 20px;
+}
+
+.iut-flex{
+  display: flex;
+  align-items: center;
+}
+
+.iut-img{
+  height: 20em;
+  padding-right: 20px;
+}
+
+.iut-histoire{
+  padding: 0 10px;
+}
+
+.iut-liste{
+  margin-top: 30px;
+}
+
+.iut-liste h4{
+  margin-bottom: 5px;
+}
+
+.iut-liste li{
+  margin-left: 20px;
+}
+
+.acc-comp{
+  padding: 0 10px 1px 0;
+  margin: 10px;
+  background-color: White;
+  border-radius: 10px;
+}
+
+.acc-comp h2{
+  padding: 10px 0 10px 10px;
+}
+
+.vie-etu{
+  padding: 10px;
+  margin: 10px;
+  background-color: White;
+  border-radius: 10px;
+}
+
+.vie-etu h2{
+  margin-bottom: 20px;
+}
+
+.vie-etu-text{
+  display: flex;
+  align-items: center;
+}
+
+.vie-etu-text img{
+  height: 15em;
+  padding-left: 20px;
 }
 
 /**************************************/
