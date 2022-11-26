@@ -22,7 +22,7 @@ main {
 }
 
 .header {
-  background: red;
+  background: rgb(220, 0, 0);
   width: 100%; /* toute la largeur */
   display: flex;
   flex-wrap: wrap; /* pour avoir les deux parties l'une en dessous de l'autre */ 
@@ -111,16 +111,15 @@ a:nth-child(3){
 .items-2{
   /* propriétés des items déroulés */
   list-style-type: none;
-
   text-align: center;
   padding: 0 10px;
   border: 1px solid black;
   border-radius: 10px;
-  background: rgb(255, 0, 30);
+  background: rgb(220, 0, 0);
 }
 
 .items-2:hover{
-  background: rgb(138, 35, 35);
+  background: rgb(130, 35, 35);
 }
 
 .items-2:hover .liens-head:hover{
@@ -183,7 +182,7 @@ footer a:hover{
   border-radius: 10px;
   padding: 15px;
   margin: 10px;
-  background: rgb(174, 68, 68);
+  background: rgb(220, 0, 0);
 }
 
 .p-foot{
@@ -224,7 +223,7 @@ footer a:hover{
   padding: 15px;
   margin: 10px;
   padding-bottom: available;
-  background: rgb(174, 68, 68);
+  background: rgb(220, 0, 0);
 }
 
 /* *********** COMPETENCE *********** */
@@ -390,9 +389,8 @@ hr{
 .pres-main {
   border-radius: 10px;
   display: flex;
-  background: rgb(75, 73, 73);
+  background: white;
   flex-wrap: wrap;
-  border: 2px solid black;
   margin: 1%;
   justify-content: center;
 }
@@ -405,7 +403,7 @@ hr{
   align-items: center;
   height: 60px;
   width: 100%;
-  background: rgb(204, 42, 42);
+  background: rgb(220, 0, 0);
 }
 
 .pres-b2{
@@ -414,8 +412,8 @@ hr{
   flex-wrap: wrap;
   align-content: stretch;
   width: 100%;
-  border: 2px solid black;
-  background: rgb(35, 32, 31);
+  background: rgb(146, 146, 146);
+  border-radius: 10px;
 }
 
 .pres-p{
@@ -423,7 +421,7 @@ hr{
   display: flex;
   width: 100%;
   margin: 1%;
-  background: rgb(171, 97, 97);
+  background: rgb(220, 0, 0);
   padding: 5px;
   justify-content: center;
 }
@@ -435,16 +433,18 @@ hr{
   border-radius: 10px;
   margin: 1%;
   padding: 5px;
-  background: rgb(243, 218, 218);
+  background: white;
   width: 20%;
   justify-content: center;
 }
 
 .pres-table{
-    background: rgb(244, 231, 231);
-    font-size: 12px;
-    margin: 1%;
-    width: 50%;
+  background: white;
+  font-size: 12px;
+  margin: 1%;
+  padding: 5px;
+  width: 50%;
+  border-radius: 10px;
 }
 
 .td-pres{
@@ -478,7 +478,7 @@ hr{
   width: 90%;
 }
 
-.pres-boxC1, .pres-boxC3, .pres-boxC5, .pres-boxC2, .pres-boxC4, .pres-boxC6{
+.pres-box{
   width: 99%;
   margin: 1%;
   padding: 0.7%;
@@ -489,11 +489,6 @@ hr{
   grid-template-rows: 50% 50%;
 }
 
-.pres-boxC2, .pres-boxC4, .pres-boxC6{
-  grid-template-columns: 25% 25% 25% auto;
-  grid-template-rows: 50% 50%;
-}
- 
 .logoC{
   display: flex;
   width: 170px;
@@ -504,7 +499,6 @@ hr{
 .bleft {
   border-radius: 10px;
   margin: 2%;
-  background: rgb(183, 115, 247);
   grid-row: 1/3;
   grid-column: 1;
   justify-self: center;
@@ -513,13 +507,12 @@ hr{
 .bright {
   border-radius: 10px;
   margin: 2%;
-  background: rgb(183, 115, 247);
   grid-row: 1/3;
   grid-column: 4;
   justify-self: center;
 }
 
-.pres-boxC1 :nth-child(n+2), .pres-boxC3 :nth-child(n+2), .pres-boxC5 :nth-child(n+2), .pres-boxC2 :nth-child(n+2), .pres-boxC4 :nth-child(n+2), .pres-boxC6 :nth-child(n+2){
+.pres-box :nth-child(n+2){
   margin: 1%;
   border-radius: 10px;
   background: rgba(105, 101, 101, 0.608);
@@ -527,21 +520,14 @@ hr{
   padding: 4px;
   height: 70px;
 }
-.pres-boxC1 :nth-child(n+5), .pres-boxC3 :nth-child(n+5), .pres-boxC5 :nth-child(n+5), .pres-boxC2 :nth-child(n+5), .pres-boxC4 :nth-child(n+5), .pres-boxC6 :nth-child(n+5){
+
+.pres-box :nth-child(n+5){
   grid-row: 2;
 }
 
 
 /********************    pages   *****************************/
 /******************** compétence *****************************/
-
-.comp1{
-  background: rgba(239, 4, 4, 0.789);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5px;
-}
 
 .fc-button{
   display: block;
@@ -659,6 +645,11 @@ hr{
 .iut-img{
   height: 20em;
   padding-right: 20px;
+  transition: transform .1s;
+}
+
+.iut-img:hover{
+  transform: scale(1.1);
 }
 
 .iut-histoire{
@@ -686,6 +677,18 @@ hr{
 
 .acc-comp h2{
   padding: 10px 0 10px 10px;
+}
+
+.rotate-right, .rotate-left{
+  transition: transform .1s;
+}
+
+.rotate-right:hover{
+  transform: rotate(45deg);
+}
+
+.rotate-left:hover{
+  transform: rotate(-45deg);
 }
 
 .vie-etu{
