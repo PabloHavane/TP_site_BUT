@@ -299,15 +299,15 @@ hr{
   border: solid 1px #000;
 }
 
-.r-competence{
+.r-ressource{
   padding: 5px 10px;
 }
 
-.r-last-competence{
+.r-last-ressource{
   padding: 5px 10px 10px 10px;
 }
 
-.r-competence h4{
+.r-ressource h4{
   padding: 3px 0;
 }
 
